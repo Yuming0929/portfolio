@@ -7,7 +7,7 @@ import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from"react-icons/hi";
 import {useSectionInView } from "../lib/hooks";
 
-const intro = () => {
+const Intro = () => {
 
     const {ref} = useSectionInView("Home", 0.5);
 
@@ -97,4 +97,4 @@ const intro = () => {
     )
 };
 
-export default intro
+export default Intro
