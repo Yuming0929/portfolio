@@ -49,7 +49,7 @@ export const projectsData = [
       "A commercial project that designs for companies to visualize their products to users and provide customizable features which allow users to choose",
     tags: ["React", "TypeScript", "Three.js", "Redux"],
     imageUrl: huasu,
-    projectUrl: "https://yuminghuang.xyz/huasu-configurator/#/"
+    projectUrl: "https://yuming0929.github.io/huasu-configurator/#/"
   },
   {
     title: "Airbnb-like Online Reservation Platform",
@@ -57,7 +57,7 @@ export const projectsData = [
       "A fully functional Airbnb-like platform. Allowing user to make reservation of other users's uploaded properties. ",
     tags: ["React","TypeScript", "Next.js", "Prisma","Zustand", "Tailwind", "MongoDB"],
     imageUrl: airbnb,
-    projectUrl: "",
+    projectUrl: "https://huasu-reserve.vercel.app/",
   },
 ] as const;
 
