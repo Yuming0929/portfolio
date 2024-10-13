@@ -3,12 +3,15 @@ import { Inter } from 'next/font/google'
 import Header from '@/components/header'
 import ActiveSectionContextProvider from '@/context/active-section-context'
 import Footer from '@/components/footer'
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Yuming | Portfolio',
-  description: 'Yuming',
+  title: 'Yuming Huang | Portfolio',
+  description: 'Welcome to Yuming Huang\'s portfolio showcasing projects and skills.',
+  keywords: 'Yuming Huang, portfolio, web development, projects, skills, developer',
+  author: 'Yuming Huang',
 }
 
 export default function RootLayout({
@@ -40,7 +43,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </ActiveSectionContextProvider>
-        
+        <Analytics />
         
       </body>
     </html>
