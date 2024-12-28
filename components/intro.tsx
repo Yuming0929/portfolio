@@ -25,6 +25,10 @@ const Intro = () => {
         navigator.clipboard.writeText(val)
         toast.success('Succesfully copied to your clipboard!')
     }
+
+    const onClickeFunction = () => {
+        toast.error("功能开发中...")
+    }
     return (
         <section id="home" ref={ref} className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
             <Toaster></Toaster>
@@ -144,7 +148,7 @@ const Intro = () => {
                 <a className='flex flex-col items-center w-32
                     bg-white text-slate-900 text-[1rem] p-4   rounded-xl
                     hover:scale-105 hover:bg-stone-50 cursor-pointer transition border border-black'
-                    href='' target="_blak">
+                    onClick={onClickeFunction}>
                     <div className='text-[3rem]'>
                         <FaTools />
                     </div>
@@ -160,7 +164,7 @@ const Intro = () => {
                 <a className='flex flex-col items-center  w-32
                     bg-white text-slate-900 text-[1rem] p-4   rounded-xl
                     hover:scale-105 hover:bg-stone-50 cursor-pointer transition border border-black'
-                    href='' target="_blak">
+                    onClick={onClickeFunction}>
                     <div className='text-[3rem]'>
                         <FaGamepad />
                     </div>
